@@ -24,7 +24,7 @@
         "position": {
             "type": "enumeration",
             "enum": [
-                "firendly",
+                "friendly",
                 "unfriendly"
             ]
         }

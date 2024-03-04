@@ -798,9 +798,9 @@ export interface ApiCommunitieCommunitie extends Schema.CollectionType {
     name: Attribute.String;
     city: Attribute.String;
     about: Attribute.Text;
-    representative: Attribute.Relation<
+    representatives: Attribute.Relation<
       'api::communitie.communitie',
-      'oneToOne',
+      'oneToMany',
       'api::representative.representative'
     >;
     social_network: Attribute.Relation<
@@ -1089,7 +1089,7 @@ export interface ApiRepresentativeRepresentative extends Schema.CollectionType {
     avatar: Attribute.String;
     dateOfBirth: Attribute.Date;
     name: Attribute.String;
-    position: Attribute.Enumeration<['firendly', 'unfriendly']>;
+    position: Attribute.Enumeration<['friendly', 'unfriendly']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

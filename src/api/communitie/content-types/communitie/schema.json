@@ -21,9 +21,9 @@
     "about": {
       "type": "text"
     },
-    "representative": {
+    "representatives": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::representative.representative"
     },
     "social_network": {
