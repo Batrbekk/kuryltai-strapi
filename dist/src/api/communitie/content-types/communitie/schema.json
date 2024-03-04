@@ -21,12 +21,6 @@
         "about": {
             "type": "text"
         },
-        "friendly": {
-            "type": "integer"
-        },
-        "unfriendly": {
-            "type": "integer"
-        },
         "representative": {
             "type": "relation",
             "relation": "oneToOne",
@@ -249,6 +243,12 @@
                 "zm-Zambia",
                 "zw-Zimbabwe"
             ]
+        },
+        "lat": {
+            "type": "string"
+        },
+        "lon": {
+            "type": "string"
         }
     }
 }

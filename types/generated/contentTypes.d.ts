@@ -798,8 +798,6 @@ export interface ApiCommunitieCommunitie extends Schema.CollectionType {
     name: Attribute.String;
     city: Attribute.String;
     about: Attribute.Text;
-    friendly: Attribute.Integer;
-    unfriendly: Attribute.Integer;
     representative: Attribute.Relation<
       'api::communitie.communitie',
       'oneToOne',
@@ -1022,6 +1020,8 @@ export interface ApiCommunitieCommunitie extends Schema.CollectionType {
         'zw-Zimbabwe'
       ]
     >;
+    lat: Attribute.String;
+    lon: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1089,7 +1089,7 @@ export interface ApiRepresentativeRepresentative extends Schema.CollectionType {
     avatar: Attribute.String;
     dateOfBirth: Attribute.Date;
     name: Attribute.String;
-    position: Attribute.String;
+    position: Attribute.Enumeration<['firendly', 'unfriendly']>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
