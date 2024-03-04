@@ -1022,6 +1022,16 @@ export interface ApiCommunitieCommunitie extends Schema.CollectionType {
     >;
     lat: Attribute.String;
     lon: Attribute.String;
+    friendly: Attribute.Relation<
+      'api::communitie.communitie',
+      'oneToMany',
+      'api::communitie.communitie'
+    >;
+    unfriendlies: Attribute.Relation<
+      'api::communitie.communitie',
+      'oneToMany',
+      'api::communitie.communitie'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -1089,7 +1099,7 @@ export interface ApiRepresentativeRepresentative extends Schema.CollectionType {
     avatar: Attribute.String;
     dateOfBirth: Attribute.Date;
     name: Attribute.String;
-    position: Attribute.Enumeration<['friendly', 'unfriendly']>;
+    position: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

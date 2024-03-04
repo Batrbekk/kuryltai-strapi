@@ -249,6 +249,16 @@
     },
     "lon": {
       "type": "string"
+    },
+    "friendly": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::communitie.communitie"
+    },
+    "unfriendlies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::communitie.communitie"
     }
   }
 }

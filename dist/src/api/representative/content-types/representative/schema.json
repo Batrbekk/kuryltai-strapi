@@ -22,11 +22,7 @@
             "type": "string"
         },
         "position": {
-            "type": "enumeration",
-            "enum": [
-                "friendly",
-                "unfriendly"
-            ]
+            "type": "string"
         }
     }
 }
