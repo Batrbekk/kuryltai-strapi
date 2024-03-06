@@ -21,9 +21,6 @@
     "name": {
       "type": "string"
     },
-    "position": {
-      "type": "string"
-    },
     "biography": {
       "type": "text"
     }
