@@ -1100,6 +1100,7 @@ export interface ApiRepresentativeRepresentative extends Schema.CollectionType {
     dateOfBirth: Attribute.Date;
     name: Attribute.String;
     position: Attribute.String;
+    biography: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
