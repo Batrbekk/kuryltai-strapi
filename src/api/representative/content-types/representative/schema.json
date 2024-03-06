@@ -26,6 +26,18 @@
     },
     "position": {
       "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "telegram": {
+      "type": "string"
+    },
+    "twitter": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
     }
   }
 }

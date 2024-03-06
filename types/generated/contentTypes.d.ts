@@ -1101,6 +1101,10 @@ export interface ApiRepresentativeRepresentative extends Schema.CollectionType {
     name: Attribute.String;
     biography: Attribute.Text;
     position: Attribute.String;
+    instagram: Attribute.String;
+    telegram: Attribute.String;
+    twitter: Attribute.String;
+    facebook: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
