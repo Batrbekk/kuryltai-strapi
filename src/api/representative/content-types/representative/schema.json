@@ -23,6 +23,9 @@
     },
     "biography": {
       "type": "text"
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
